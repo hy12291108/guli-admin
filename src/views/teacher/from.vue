@@ -24,7 +24,7 @@
         <el-input v-model="teacher.intro" :rows="10" type="textarea"/>
       </el-form-item>
 
-      <!-- 讲师头像：TODO -->
+      <!-- 讲师头像：TODO-->
       <!-- 讲师头像 -->
       <el-form-item label="讲师头像">
         <!-- 头衔缩略图 -->
@@ -70,6 +70,7 @@
   }
 
   export default {
+    //声明一下这个插件
     components: { ImageCropper, PanThumb },
     data() {
       return {
@@ -161,7 +162,6 @@
       },
       // 上传成功后的回调函数
       cropSuccess(data) {
-        alert(1)
         console.log(data)
         this.imagecropperShow = false
         this.teacher.avatar = data.url

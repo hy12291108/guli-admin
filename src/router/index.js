@@ -66,6 +66,29 @@ export const constantRouterMap = [
     ]
   },
 
+  // 课程分类管理
+  {
+    path: '/subject',
+    component: Layout,
+    redirect: '/subject/list',
+    name: 'Subject',
+    meta: { title: '课程分类管理', icon: 'nested' },
+    children: [
+      {
+        path: 'list',
+        name: 'EduSubjectList',
+        component: () => import('@/views/subject/list'),
+        meta: { title: '课程分类列表' }
+      },
+      {
+        path: 'import',
+        name: 'EduSubjectImport',
+        component: () => import('@/views/subject/import'),
+        meta: { title: '课程分类导入' }
+      }
+    ]
+  },
+
   {
     path: '/example',
     component: Layout,

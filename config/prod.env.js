@@ -1,6 +1,6 @@
 'use strict'
 module.exports = {
   NODE_ENV: '"production"',
-  BASE_API: '"https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin"',
-  OSS_PATH: '"https://guli-file.oss-cn-beijing.aliyuncs.com"'
+  //BASE_API: '"https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin"',
+  //OSS_PATH: '"https://guli-2020.oss-cn-beijing.aliyuncs.com"'
 }
