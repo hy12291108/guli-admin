@@ -78,13 +78,13 @@ export const constantRouterMap = [
         path: 'list',
         name: '课程分类列表',
         component: () => import('@/views/subject/list'),
-        meta: { title: '课程分类列表' }
+        meta: { title: '课程分类列表' ,  icon: 'list'}
       },
       {
         path: 'import',
         name: '课程分类导入',
         component: () => import('@/views/subject/import'),
-        meta: { title: '课程分类导入' }
+        meta: { title: '课程分类导入' ,  icon: 'edit' }
       }
     ]
   },
@@ -95,19 +95,19 @@ export const constantRouterMap = [
     component: Layout,
     redirect: '/course/list',
     name: '课程管理',
-    meta: { title: '课程管理', icon: 'from' },
+    meta: { title: '课程管理',  icon: 'peoples' },
     children: [
       {
         path: 'list',
         name: '课程列表',
         component: () => import('@/views/course/list'),
-        meta: { title: '课程列表' }
+        meta: { title: '课程列表',  icon: 'list' }
       },
       {
         path: 'info',
         name: '发布课程',
         component: () => import('@/views/course/info'),
-        meta: { title: '发布课程' }
+        meta: { title: '发布课程',  icon: 'edit' }
       },
       {
         path: 'info/:id',
@@ -135,7 +135,7 @@ export const constantRouterMap = [
 
 
 
-  {
+ /* {
     path: '/example',
     component: Layout,
     redirect: '/example/table',
@@ -237,7 +237,7 @@ export const constantRouterMap = [
         meta: { title: 'External Link', icon: 'link' }
       }
     ]
-  },
+  },*/
 
   { path: '*', redirect: '/404', hidden: true }
 ]
