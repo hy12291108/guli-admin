@@ -143,7 +143,7 @@
           //根据id获取课程基本信息
           this.fetchCourseInfoById(id)
         } else {
-          this.courseInfo = { ...defaultForm }
+          this.courseInfo = { ...defaultForm }   //清空表单数据
           // 初始化分类列表
           this.initSubjectList()
           //初始化教师列表
