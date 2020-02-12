@@ -133,6 +133,28 @@ export const constantRouterMap = [
     ]
   },
 
+  {
+    path: '/statistics',
+    component: Layout,
+    redirect: '/statistics/create',
+    name: '统计分析',
+    meta: { title: '统计分析', icon: 'chart' },
+    children: [
+      {
+        path: 'create',
+        name: '生成统计',
+        component: () => import('@/views/statistics/create'),
+        meta: { title: '生成统计' }
+      },
+      {
+        path: 'chart',
+        name: '统计图表',
+        component: () => import('@/views/statistics/chart'),
+        meta: { title: '统计图表' }
+      }
+    ]
+  },
+
 
 
  /* {
